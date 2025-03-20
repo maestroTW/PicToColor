@@ -1,5 +1,5 @@
 import PIL
-from PIL import Image, ImageFilter, ImageEnhance, ImageOps
+from PIL import Image, ImageEnhance, ImageOps
 import numpy as np
 import cv2
 
@@ -22,8 +22,3 @@ def make_coloring_page(image_path):
     inverted_edges = PIL.ImageOps.invert(canny_edges)
 
     return inverted_edges
-
-
-image_path = 'examples/test.jpg'
-coloring_page = make_coloring_page(image_path)
-coloring_page.show()
