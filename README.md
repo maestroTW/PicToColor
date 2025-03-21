@@ -1,4 +1,8 @@
 # PicToColor
+## Preview
+### Free open source solution to make a coloring book from an image
+![preview](./examples/view.png)
+
 ## Guide for Deploying Your Own Server on a Local Machine
 
 ### 1. Cloning the Repository
@@ -18,6 +22,7 @@ python app.py
 Visit the address http://127.0.0.1:5000
 
 ## TODO
-- [ ] Update README
+- [X] Update README
 - [ ] Beautiful CSS
 - [ ] Button to install image
+- [ ] Slider to adjust quality
