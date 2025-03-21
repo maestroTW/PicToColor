@@ -7,8 +7,15 @@
 <body>
     <h1>Загрузите изображение для преобразования:</h1>
     <form method="POST" action="/upload" enctype="multipart/form-data">
-        <input type="file" name="image_file" accept="image/*">
+        <input id="form-input" type="file" name="image_file" accept="image/*">
         <button type="submit">Отправить</button>
     </form>
 </body>
 </html>
+<script>
+    const fileInput = document.getElementById("form-input");
+    
+window.addEventListener('paste', e => {
+  fileInput.files = e.clipboardData.files;
+});
+</script>
